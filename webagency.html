@@ -3,40 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/webagency.css">
     <title>Accueil Web Agency</title>
 </head>
+
 <body>
     <header>
-        <img src="images/logo-webagency.png" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="#" title="aller à la section 1">Accueil</a></li>
-                <li><a href="#" title="aller à la section 1">Services</a></li>
-                <li><a href="#" title="aller à la section 1">Portfolio</a></li>
-                <li><a href="#" title="aller à la section 1">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="topnav">
+            <img src="images/logo-webagency.png" alt="logo">
+            <div class="droite">
+                <a class="active" href="#home">Accueil</a>
+                <a href="#news">Services</a>
+                <a href="#contact">Portfolio</a>
+                <a href="#about">Contact</a>
+            </div>
+        </div>
     </header>
     <main>
         <div class="slider">
             <div class="slides">
-                <figure class="slide1">
-                    <img src="images/banniere-1.jpg" alt="Une première bannière">
-                    <figcaption><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS VOS PROJETS !<br>
-                        Vous avez un projet web ? La WebAgency vous aide à le réaliser !</figcaption>
-                </figure>
-                <figure class="slide2">
-                    <img src="images/banniere-2.jpg" alt="Une deuxième bannière">
-                    <figcaption><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS VOS PROJETS !<br>
-                        Vous avez un projet web ? La WebAgency vous aide à le réaliser !</figcaption>
-                </figure>
-           </div>
+                <div class="slide">
+                    <div class="texte">Tu peux toujours mettre ton texte ICI</div>
+                    <img src="images/banniere-1.jpg" alt=""></div>
+                <div class="slide"><img src="images/banniere-2.jpg" alt=""></div>
+            </div>
         </div>
 
         <div class="listecomp">
-            <strong>Nos services</strong>
-            Agence web implantée à Paris, nous vous accompagnons dans la création de sites internet et de supports de communication adaptés à votre cible et à votre personnalité.
+            <p><strong>Nos services</strong>
+            Agence web implantée à Paris, nous vous accompagnons dans la création de sites internet et de supports de communication adaptés à votre cible et à votre personnalité.</p>
 
             <p>UX design
             L’ergonomie est au cœur de notre philosophie. Nos sites web sont avant tout pensés pour être intuitifs et faciles à utiliser.</p>
@@ -49,42 +45,43 @@
         </div>
 
         <div class="grillegraph">
-            <img src="images/projet-1-webdesign.jpg" alt="projet1">
-            <img src="images/projet-2-site-web.jpg" alt="projet2">
-            <img src="images/projet-3-design.jpg" alt="projet3">
-            <img src="images/projet-4-graphisme.jpg" alt="projet4">
-            <img src="images/projet-5-site-web.jpg" alt="projet5">
-            <img src="images/projet-6-webdesign.jpg" alt="projet6">
-            <img src="images/projet-7-logo.jpg" alt="projet7">
-            <img src="images/projet-8-graphisme.jpg" alt="projet8">
+            <img src="images/projet-1-webdesign.jpg" alt="projet1" class="imggraph">
+            <img src="images/projet-2-site-web.jpg" alt="projet2" class="imggraph">
+            <img src="images/projet-3-design.jpg" alt="projet3" class="imggraph">
+            <img src="images/projet-4-graphisme.jpg" alt="projet4" class="imggraph">
+            <img src="images/projet-5-site-web.jpg" alt="projet5" class="imggraph">
+            <img src="images/projet-6-webdesign.jpg" alt="projet6" class="imggraph">
+            <img src="images/projet-7-logo.jpg" alt="projet7" class="imggraph">
+            <img src="images/projet-8-graphisme.jpg" alt="projet8" class="imggraph">
         </div>
 
         <div class="cartform">
             <div class="cart">
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.8758744367447!2d-0.4434264844139457!3d46.31230257912014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480731a525bb215f%3A0x7abd6acf56c81636!2s40%20Rue%20Pierre%20Chantelauze%2C%2079000%20Niort!5e0!3m2!1sfr!2sfr!4v1596014375044!5m2!1sfr!2sfr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
-            <div class="form">
+            <div class="formu">
                 <form action="" method="post"> 
                     <fieldset>
                         <legend>Contact</legend>
-                            <p><input type="text" placeholder="Nom"></p>
-                            <br>
-                            <p><input type="text" placeholder="Prénom"></p>
-                            <br>
-                            <p><input type="email" placeholder="votrenom@exemple.com"></p>
-                            <br>
-                            <p><textarea placeholder="Votre message ici..."></textarea></p>
-                            <br>
-                            <p><input type="submit" value="ENVOYER LE MESSAGE"></p>
+                            <div class="aucentre">
+                                <p><input type="text" placeholder="Nom"></p>
+                                <br>
+                                <p><input type="text" placeholder="Prénom"></p>
+                                <br>
+                                <p><input type="email" placeholder="votrenom@exemple.com"></p>
+                                <br>
+                                <p><textarea placeholder="Votre message ici..."></textarea></p>
+                                <br>
+                                <p><input type="submit" value="ENVOYER LE MESSAGE"></p>
+                            </div>
                     </fieldset>
                 </form>
             </div>
         </div>
 
-
-
-
-
     </main>
+    <footer>
+        Copyright HOUDRY-LEONARD Mylène
+    </footer>
 </body>
 </html>

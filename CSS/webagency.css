@@ -1,88 +1,115 @@
 body {
   margin: 0;
 }
-
+/* header nav */
 header{
   display:flex;
   flex-flow: row wrap;
   background-color: lavender;
 }
-header img{
+
+header div img{
   display:block;
+  height: 47px;
 }
-nav{
-  margin-left:auto;
-  margin-top:auto;
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width:100%;
+  display: flex;
 }
-ul {
-  list-style-type: none;
-}
-li{
-  display:inline;
-}
-a{
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.droite{
+  margin-left: auto;
+}
+.imggraph{
+  max-width: 150px;
+}
+.aucentre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* slider */
 .slider {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    height: 400px;
+  width: 1600px;
+  height: 550px;
+  overflow: hidden;
+  margin: 20px auto;
 }
-
 .slides {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    /* max-height: 100%; */
+  width: calc(1600px * 3);
+  animation: glisse 10s infinite;
+}
+.slide {
+  float: left;
+}
+.slide_img .texte {
+  position:absolute;
+  top:2em;
+  color:white;
+  font-size:2em;
+  width:1600px;      /* même largeur que l’image */
 }
 
-.slides figure {
-    display: inline-block;
-    width: 100vw;
-    max-height: 100%;
-    margin: 0;
-}
-
-.slides figure img {
-    width: 100%;
-    /*Centrer l'image verticalement si celle-ci ne peut être affichée totalement*/
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.slides figure figcaption {
-    position: absolute;
-    bottom: 0;
-    padding: 2.5em 0;
-    text-align: center;
-    width: inherit;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-}
-@keyframes slide {
-  0%, 20%, 100% {
-      left: 0; /*1ère image*/
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
   }
-  35%, 50% {
-      left: -100vw; /*2ème image*/
+  50% {
+    transform: translateX(-1600px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
-.slides {
-  /*... Code précédent ...*/
-  /*CSS3 keyframes animation*/
-  animation-name: slide;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+/* .slider{
+  width:600px;
+  overflow: hidden;
+  margin: 20px auto;
 }
-.slides {
-  animation: slide 20s infinite ease-in-out forwards;
+
+.slides{
+  width:calc(600px * 2);
+  animation:  glisse 10s infinite;
 }
-.slides:hover {
-  animation-play-state: paused; /* Mise en pause de l'animation */
+.slide{
+  float: left;
+}
+
+@keyframes glisse {
+  0%{ 
+    transform: translateX(0)
+  }
+  50%{ 
+    transform: translateX(-600);
+  }
+  100%{ 
+    transform: translateX(0);
+  }
+} */
+/* footer */
+footer{
+  background-color: lightslategrey;
+  padding: 5%;
 }
